@@ -1,6 +1,6 @@
     import React, { useState } from 'react';
     import bestBuyLogo from '../assets/BestBuyLogo.svg';
-    import shoppingCart from '../assets/shopping-cart-outline-svgrepo-com.svg';
+    import shoppingCart from '../assets/shopping-cart-svgrepo-com.svg';
 
     const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,18 +52,25 @@
                 <a href="#" className="block py-2 hover:bg-gray-200">View All <span className="float-right">></span></a>
                 </div>
             </div>
-            <input 
+            <div className="relative flex items-center w-full md:w-auto md:max-w-xs lg:max-w-md xl:max-w-lg">
+                <input 
                 type="text" 
                 placeholder="What can we help you find today?" 
-                className="px-4 py-2 rounded-md border border-gray-300"
-            />
+                className="pl-2 pr-10 py-2 rounded-md border border-gray-300 w-full"
+                />
+                <a href="#" className="absolute right-2 text-gray-500 hover:text-gray-700">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+                </a>
+            </div>
             </div>
         </div>
         <div className='hidden md:flex items-center ml-auto'>
-            <a href="signin" className='mx-2 flex text-center text-white no-underline hover:underline'>Sign In</a>
             <span className='mx-2'>
             <img src={shoppingCart} alt="Shopping Cart" className='h-8 w-8' />
             </span>
+            <a href="signin" className='mx-2 flex text-center text-white no-underline hover:underline'>Sign In</a>
         </div>
         <div className='md:hidden'>
             <button onClick={toggleMenu} className='focus:outline-none'>
