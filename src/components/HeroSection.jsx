@@ -7,11 +7,13 @@ const HeroSection = () => {
         <>
             <div className="border-t-4 border-white"></div>
             <section id="hero" className="bg-cover bg-center h-screen text-white flex flex-col items-center justify-center pt-20">
-                <div className="text-center mb-8">
-                    <h2 className="text-4xl md:text-6xl font-bold mb-4">Today's Deals</h2>
-                    <div className="flex flex-col md:flex-row items-center justify-center">
-                        <img src="YOUR_PRODUCT_IMAGE_URL" alt="Today's Deals Product" className="h-48 md:h-64 w-auto mb-4 md:mb-0 md:mr-4" />
+            <div className="w-full max-w-6xl flex flex-col md:flex-row items-center mb-8">
+                    <div className="flex flex-col items-start text-left md:w-1/2 mb-4 md:mb-0">
+                        <h2 className="text-4xl md:text-6xl font-bold mb-4 text-black">Today's Deals</h2>
                         <a href="#products" className="bg-blue-500 text-white py-2 px-4 rounded">See More</a>
+                    </div>
+                    <div className="md:w-1/2 flex justify-center">
+                        <img src="YOUR_PRODUCT_IMAGE_URL" alt="Today's Deals Product" className="h-48 md:h-64 w-auto" />
                     </div>
                 </div>
                 <div className="w-full max-w-6xl"> 
