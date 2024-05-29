@@ -24,13 +24,13 @@
     };
 
     return (
-    <header className="bg-blue-800 text-white">
-        <div className='bg-blue-900 text-white p-3 border-box relative'>
+    <header className="bg-purple-800 text-white">
+        <div className='bg-purple-900 text-white p-3 border-box relative'>
         <nav className='text-right text-xs text-gray-300'>
-            <a href="#" className='mx-3 no-underline hover:underline'>Yardbird</a>
-            <a href="#" className='mx-3 no-underline hover:underline'>BB Outlet</a>
-            <a href="#" className='mx-3 no-underline hover:underline'>BB Business</a>
+            <a href="#" className='mx-3 no-underline hover:underline'>Find Store</a>
             <a href="#" className='mx-3 no-underline hover:underline'>Expertise</a>
+            <a href="#" className='mx-3 no-underline hover:underline'>Contact</a>
+            <a href="#" className='mx-3 no-underline hover:underline'>Help</a>
         </nav>
         </div>
         <div className="container mx-auto flex justify-between items-center">
