@@ -11,8 +11,8 @@ const App = () => {
     <div className='font-sans'>
       <Header />
       <HeroSection />
-      <FooterSection />
       <ProductsSection />
+      <FooterSection />
     </div>
   );
 };
