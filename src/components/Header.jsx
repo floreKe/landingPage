@@ -1,5 +1,7 @@
     import React, { useState } from 'react';
     import shoppingCart from '../assets/shopping-cart-svgrepo-com.svg';
+    
+    import logo from '../assets/yourLogoHere.png';
 
     const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,7 +37,7 @@
         <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-4">
             <a href="#">
-            <img src="" alt="logo" className='h-24 w-24 mr-4' />
+            <img src={logo} alt="logo" className='h-24 w-24 mr-4 p-2' />
             </a>
             <div className='hidden md:flex gap-4 items-center'>
             <a href="#hero" className="mx-2 text-white no-underline hover:underline">Home</a>

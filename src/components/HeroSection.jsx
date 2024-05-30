@@ -2,6 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
+import postCard from "../assets/Postcard.png";
 import fridge from "../assets/appliances.png";
 import health from "../assets/healthfitness.png";
 import theater from "../assets/homeTheater.png";
@@ -19,16 +20,16 @@ const HeroSection = () => {
         <>
             <div className="border-t-4 border-white"></div>
             <section id="hero" className="bg-cover bg-center h-screen text-white flex flex-col items-center justify-center pt-20">
-                <div className="w-full max-w-6xl flex flex-col md:flex-row items-center mb-8 border-b-4 border-purple-700">
-                    <div className="flex flex-col items-start text-left md:w-1/2 mb-4 md:mb-0">
+                <div className="w-full max-w-6xl flex flex-col md:flex-row items-center mb-8 border-4 border-purple-700">
+                    <div className="flex flex-col items-start text-left w-full md:w-1/2 mb-4 md:mb-0 p-4">
                         <h2 className="text-4xl md:text-6xl font-bold mb-4 text-black">Today's Deals</h2>
                         <a href="#products" className="bg-purple-700 text-white py-2 px-4 rounded">See More</a>
                     </div>
-                    <div className="md:w-1/2 flex justify-center">
-                        <img src='' alt="Today's Deals Product" className="h-48 md:h-64 w-auto" />
+                    <div className="flex justify-center w-full md:w-1/2 p-4">
+                        <img src={postCard} alt="Today's Deals Product" className="h-auto md:h-auto w-full object-cover" />
                     </div>
                 </div>
-                <div className="w-full max-w-6xl"> 
+                <div className="w-full max-w-6xl border-b-4"> 
                     <div className="text-black text-left w-full mb-4 flex justify-between items-center">
                         <h3 className="text-2xl font-bold">Get it all right here</h3>
                         <a href="#" className="text-blue-500 hover:underline">View all</a>
