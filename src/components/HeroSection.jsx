@@ -24,7 +24,7 @@ const HeroSection = () => {
                     </div>
                     <Carousel showThumbs={false} showIndicators={false} showStatus={false} autoPlay={true} infiniteLoop={true} emulateTouch={true} centerMode={true} centerSlidePercentage={20}>
                         <div className="flex flex-col items-center">
-                            <img src='' alt="Appliances" className="h-32 w-32 object-cover rounded-full mb-2" />
+                            <img src='' alt="Appliances" className="h-32 w-32 object-cover rounded-full mb-2 bg-gray-400" />
                             <p className="text-lg text-black">Appliances</p>
                         </div>
                         <div className="flex flex-col items-center">
