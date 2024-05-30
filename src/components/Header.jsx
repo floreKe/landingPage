@@ -1,5 +1,4 @@
     import React, { useState } from 'react';
-    import bestBuyLogo from '../assets/BestBuyLogo.svg';
     import shoppingCart from '../assets/shopping-cart-svgrepo-com.svg';
 
     const Header = () => {
@@ -36,7 +35,7 @@
         <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-4">
             <a href="#">
-            <img src={bestBuyLogo} alt="logo" className='h-24 w-24 mr-4' />
+            <img src="" alt="logo" className='h-24 w-24 mr-4' />
             </a>
             <div className='hidden md:flex gap-4 items-center'>
             <a href="#hero" className="mx-2 text-white no-underline hover:underline">Home</a>
