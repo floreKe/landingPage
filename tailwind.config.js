@@ -12,6 +12,7 @@ export default {
       'light-white': '#f2ebfb',
       'white': '#ececec',
       'blue': '#2d56ff',
+      'black': '#0c0b09',
     },
     extend: {},
   },
