@@ -2,6 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
+import card from "../assets/compTest.png";
 import postCard from "../assets/Postcard.png";
 import fridge from "../assets/appliances.png";
 import health from "../assets/healthfitness.png";
@@ -19,14 +20,55 @@ const HeroSection = () => {
     return (
         <>
             <div className="border-t-4 border-white"></div>
-            <section id="hero" className="bg-cover bg-center h-screen text-white flex flex-col items-center justify-center pt-20">
-                <div className="w-full max-w-6xl flex flex-col md:flex-row items-center mb-8 border-4 border-purple-700">
-                    <div className="flex flex-col items-start text-left w-full md:w-1/2 mb-4 md:mb-0 p-4">
-                        <h2 className="text-4xl md:text-6xl font-bold mb-4 text-black">Today's Deals</h2>
-                        <a href="#products" className="bg-purple-700 text-white py-2 px-4 rounded hover:bg-purple-800">See More</a>
+            <section id="hero" className="bg-cover bg-center text-white flex flex-col items-center justify-center w-full px-4 py-8">
+                <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8 border-b-4 border-purple-700">
+                    <div className="col-span-1 md:col-span-2 lg:col-span-2 bg-gray-100 p-4 rounded-lg flex flex-col justify-between">
+                        <div className="relative w-full h-80 bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${card})` }}>
+                            <div className="absolute inset-0 bg-black bg-opacity-50 p-4 rounded-lg flex flex-col justify-center">
+                                <h2 className="text-2xl font-bold mb-2 text-white">Patio style without the splurge</h2>
+                                <a href="#" className="text-yellow-500 hover:underline">Shop now</a>
+                            </div>
+                        </div>
                     </div>
-                    <div className="flex justify-center w-full md:w-1/2 p-4">
-                        <img src={postCard} alt="Today's Deals Product" className="h-auto md:h-auto w-full object-cover" />
+                    <div className="col-span-1 md:col-span-2 lg:col-span-2 bg-gray-100 p-4 rounded-lg flex flex-col justify-between">
+                        <div className="relative w-full h-80 bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${postCard})` }}>
+                            <div className="absolute inset-0 bg-black bg-opacity-50 p-4 rounded-lg flex flex-col justify-center">
+                                <h2 className="text-2xl font-bold mb-2 text-white">Look at Today's Deals</h2>
+                                <a href="#" className="text-white hover:underline">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-span-1 md:col-span-2 lg:col-span-2 bg-gray-100 p-4 rounded-lg flex flex-col justify-between">
+                        <div className="relative w-full h-80 bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${card})` }}>
+                            <div className="absolute inset-0 bg-black bg-opacity-50 p-4 rounded-lg flex flex-col justify-center">
+                                <h2 className="text-2xl font-bold mb-2 text-white">Get the Latest Ryzen Deals</h2>
+                                <a href="#" className="text-yellow-500 hover:underline">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-span-1 md:col-span-2 lg:col-span-2 bg-gray-100 p-4 rounded-lg flex flex-col justify-between">
+                        <div className="relative w-full h-80 bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${card})` }}>
+                            <div className="absolute inset-0 bg-black bg-opacity-50 p-4 rounded-lg flex flex-col justify-center">
+                                <h2 className="text-2xl font-bold mb-2 text-white">Get the Latest Ryzen Deals</h2>
+                                <a href="#" className="text-yellow-500 hover:underline">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-span-1 md:col-span-2 lg:col-span-2 bg-gray-100 p-4 rounded-lg flex flex-col justify-between">
+                        <div className="relative w-full h-80 bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${card})` }}>
+                            <div className="absolute inset-0 bg-black bg-opacity-50 p-4 rounded-lg flex flex-col justify-center">
+                                <h2 className="text-2xl font-bold mb-2 text-white">Get the Latest Ryzen Deals</h2>
+                                <a href="#" className="text-yellow-500 hover:underline">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-span-1 md:col-span-2 lg:col-span-2 bg-gray-100 p-4 rounded-lg flex flex-col justify-between">
+                        <div className="relative w-full h-80 bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${card})` }}>
+                            <div className="absolute inset-0 bg-black bg-opacity-50 p-4 rounded-lg flex flex-col justify-center">
+                                <h2 className="text-2xl font-bold mb-2 text-white">Get the Latest Ryzen Deals</h2>
+                                <a href="#" className="text-yellow-500 hover:underline">Shop now</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="w-full max-w-6xl border-b-4"> 
@@ -107,5 +149,6 @@ const HeroSection = () => {
         </>
     );
 };
+
 
 export default HeroSection;
