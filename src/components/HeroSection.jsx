@@ -4,6 +4,12 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import card from "../assets/compTest.png";
 import postCard from "../assets/Postcard.png";
+import banner2 from "../assets/banner2.png";
+import banner3 from "../assets/banner3.png";
+import banner4 from "../assets/banner4.png";
+import banner5 from "../assets/office.png";
+import banner6 from "../assets/iphonee.png";
+
 import fridge from "../assets/appliances.png";
 import health from "../assets/healthfitness.png";
 import theater from "../assets/homeTheater.png";
@@ -23,15 +29,15 @@ const HeroSection = () => {
             <section id="hero" className="bg-cover bg-center text-white flex flex-col items-center justify-center w-full px-4 py-8">
             <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8 border-b-4 border-purple-700">
                     <div className="col-span-1 md:col-span-2 lg:col-span-2 bg-gray-100 p-4 rounded-lg flex flex-col justify-between">
-                        <div className="relative w-full h-80 bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${card})` }}>
+                        <div className="relative w-full h-80 bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${banner3})` }}>
                             <div className="absolute inset-0 bg-black bg-opacity-50 p-4 rounded-lg flex flex-col justify-center">
-                                <h2 className="text-2xl font-bold mb-2 text-white">Patio style without the splurge</h2>
+                                <h2 className="text-2xl font-bold mb-2 text-white">BOGO Monitor Sale</h2>
                                 <a href="#" className="text-yellow-500 hover:underline hover:text-blue">Shop now</a>
                             </div>
                         </div>
                     </div>
                     <div className="col-span-1 md:col-span-3 lg:col-span-3 bg-gray-100 p-4 rounded-lg flex flex-col justify-between">
-                        <div className="relative w-full h-96 bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${postCard})` }}>
+                        <div className="relative w-full h-96 bg-contain bg-center rounded-lg" style={{ backgroundImage: `url(${postCard})` }}>
                             <div className="absolute inset-0 bg-black bg-opacity-50 p-4 rounded-lg flex flex-col justify-center">
                                 <h2 className="text-3xl font-bold mb-2 text-white">Look at Today's Deals</h2>
                                 <a href="#" className="text-white hover:underline hover:text-blue">Shop now</a>
@@ -39,41 +45,41 @@ const HeroSection = () => {
                         </div>
                     </div>
                     <div className="col-span-1 md:col-span-1 lg:col-span-1 bg-gray-100 p-4 rounded-lg flex flex-col justify-between">
-                        <div className="relative w-full h-48 bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${card})` }}>
+                        <div className="relative w-full h-60 bg-contain bg-center rounded-lg" style={{ backgroundImage: `url(${banner5})` }}>
                             <div className="absolute inset-0 bg-black bg-opacity-50 p-4 rounded-lg flex flex-col justify-center">
-                                <h2 className="text-2xl font-bold mb-2 text-white">Dive into new looks</h2>
-                                <a href="#" className="text-yellow-500 hover:underline hover:text-blue">Shop swim</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-span-1 md:col-span-1 lg:col-span-1 bg-gray-100 p-4 rounded-lg flex flex-col justify-between">
-                        <div className="relative w-full h-48 bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${card})` }}>
-                            <div className="absolute inset-0 bg-black bg-opacity-50 p-4 rounded-lg flex flex-col justify-center">
-                                <h2 className="text-2xl font-bold mb-2 text-white">Budget-friendly bikes</h2>
+                                <h2 className="text-2xl font-bold mb-2 text-white">Style your Office</h2>
                                 <a href="#" className="text-yellow-500 hover:underline hover:text-blue">Shop now</a>
                             </div>
                         </div>
                     </div>
                     <div className="col-span-1 md:col-span-1 lg:col-span-1 bg-gray-100 p-4 rounded-lg flex flex-col justify-between">
-                        <div className="relative w-full h-48 bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${card})` }}>
+                        <div className="relative w-full h-60 bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${banner6})` }}>
+                            <div className="absolute inset-0 bg-black bg-opacity-60 p-4 rounded-lg flex flex-col justify-center">
+                                <h2 className="text-2xl font-bold mb-2 text-white">Buy the latest Phones</h2>
+                                <a href="#" className="text-yellow-500 hover:underline hover:text-blue">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-span-1 md:col-span-1 lg:col-span-1 bg-gray-100 p-4 rounded-lg flex flex-col justify-between">
+                        <div className="relative w-full h-60 bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${banner4})` }}>
                             <div className="absolute inset-0 bg-black bg-opacity-50 p-4 rounded-lg flex flex-col justify-center">
-                                <h2 className="text-2xl font-bold mb-2 text-white">Up to 40% off</h2>
+                                <h2 className="text-2xl font-bold mb-2 text-white">Up to 30% off any speaker</h2>
                                 <a href="#" className="text-yellow-500 hover:underline hover:text-blue">Shop now</a>
                             </div>
                         </div>
                     </div>
                     <div className="col-span-1 md:col-span-2 lg:col-span-2 bg-gray-100 p-4 rounded-lg flex flex-col justify-between">
-                        <div className="relative w-full h-80 bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${card})` }}>
-                            <div className="absolute inset-0 bg-black bg-opacity-50 p-4 rounded-lg flex flex-col justify-center">
+                        <div className="relative w-full h-72 bg-cover  bg-bottom rounded-lg" style={{ backgroundImage: `url(${card})` }}>
+                            <div className="absolute inset-0 bg-black bg-opacity-70 p-4 rounded-lg flex flex-col justify-center">
                                 <h2 className="text-2xl font-bold mb-2 text-white">Get the Latest Ryzen Deals</h2>
                                 <a href="#" className="text-yellow-500 hover:underline hover:text-blue">Shop now</a>
                             </div>
                         </div>
                     </div>
                     <div className="col-span-1 md:col-span-2 lg:col-span-2 bg-gray-100 p-4 rounded-lg flex flex-col justify-between">
-                        <div className="relative w-full h-80 bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${card})` }}>
-                            <div className="absolute inset-0 bg-black bg-opacity-50 p-4 rounded-lg flex flex-col justify-center">
-                                <h2 className="text-2xl font-bold mb-2 text-white">Get the Latest Ryzen Deals</h2>
+                        <div className="relative w-full h-72 bg-cover bg-no-repeat bg-center rounded-lg" style={{ backgroundImage: `url(${banner2})` }}>
+                            <div className="absolute inset-0 bg-black bg-opacity-70 p-4 rounded-lg flex flex-col justify-center">
+                                <h2 className="text-2xl font-bold mb-2 text-white">Top Viewed Laptops</h2>
                                 <a href="#" className="text-yellow-500 hover:underline hover:text-blue">Shop now</a>
                             </div>
                         </div>
